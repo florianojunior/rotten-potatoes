@@ -30,5 +30,6 @@ jobs:
       
       - name: Kubernetes Set Context
         uses: Azure/k8s-set-context@v2
-        with: kubeconfig
+        with:
+          method: kubeconfig
           kubeconfig: ${{ secret.K8S_CONFIG }}
